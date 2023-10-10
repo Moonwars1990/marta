@@ -6,13 +6,11 @@
     padding: 100;
 }
 html{
-    /*me permite deslizar cuando hago clic en los links del menu*/
     scroll-behavior: smooth;
     }
     
-    /*menu*/
     .contenedor-header{
-        background:  white
+        background:  white;
         position: fixed;
         width: 100%;
         top: 0;
@@ -29,7 +27,6 @@ html{
         padding: 15px 20px;
         
     }
-    /*este es el de la barra de aariba del todo*/
     .contenedor-header header .logo a{
         font-family: 'Times New Roman', Times, serif;
         font-size: 36px;
@@ -49,7 +46,6 @@ html{
     .nav-link{
         color: rgb(188, 26, 131);
     }
-    /*este es el de la barra donde pone Inicio,sobre mi..*/
     .nav-item{
        
    
@@ -59,11 +55,6 @@ html{
         transition: .5s;
         text-decoration: none;
     }
-  
-  
-        /*seccion de i n i c i o*/
-    
-   
     
     
     
@@ -88,7 +79,7 @@ html{
         text-decoration: none;
         display: inline-block;
         border: 2px solid #fff;
-        width: 42px; /*Separacion entre los iconos*/
+        width: 42px;
         height: 42px;
         line-height: 42px;
         margin: 40px 5px;
@@ -103,7 +94,7 @@ html{
        
         color: rgb(75, 63, 71);
         padding: 50px 20px;
-        background: white
+        background: #FAFAFA;
         background-size: cover;
         height: 100vh;
         display: flex;
@@ -122,7 +113,6 @@ html{
     
     }
     .sobremi .contenido-seccion p{
-        font:18px;
         line-height: 22px;
         margin-bottom: 20px;
         text-align:center;
@@ -132,7 +122,6 @@ html{
         color: rgb(78, 72, 76);
         font-weight: bold;
     }
-    /*para poner en cloumna los datos personales e intereses*/
     .sobremi .fila{
         display:flex;
 
@@ -152,7 +141,6 @@ html{
         color: rgb(93, 138, 180);
         width: 130px;
     }
-    /*Donde pone la ubicación*/
     .sobremi .fila .col ul li span{
         background-color:  rgb(228, 135, 175);
         padding: 3px;
@@ -178,11 +166,30 @@ html{
         justify-content: center;
         transition: .3s;
     }
-    /*para ponerle color cuando pasa el ratón*/
+
     .sobremi .fila .col .contenedor-intereses .intereses:hover{
         background-color: rgb(215, 250, 220);
     }
-    /*para ponerlo en negrita y más grande*/
+
+    .infocard > p {
+        color: rgb(181, 29, 161) !important;
+    }
+
+    .infocard {
+        position: relative;
+    }
+
+    .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #f0f0f0; /* or any color you like */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px; /* adjust as necessary */
+    }
+
     .sobremi .fila .col .contenedor-intereses .intereses i{
         font-size: 30px;
         margin-bottom: 10px;
@@ -202,7 +209,6 @@ html{
         z-index: 10;
     }
     .sobremi button .overlay{
-        possition: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -211,15 +217,14 @@ html{
         z-index: 0.1;
         transition: 1s;
     }
+    
     .sobremi button:hover .overlay{
         width: 100%;
     }
     
     
-
-    /*SECCION de CV*/
     .curriculum{
-        background-color: white;
+        background-color: #FAFAFA;
         color: rgb(185, 173, 185);
         padding: 50px 20px;
     }
@@ -235,7 +240,6 @@ html{
         color:  rgb(145, 27, 96);
         max-width: 1100px;
     }
-    /*Para hacerlo en columna*/
     .curriculum .fila{
         display: flex ;
         justify-content: space-between;
@@ -252,14 +256,12 @@ html{
     }
    
    
-    /*Para el relleno del cuadro de CV*/
     .curriculum .fila .item{
         padding: 25px;
         margin-bottom: 30px;
         background-color: rgb(153, 42, 107);
         position: relative;
     }
-    /*Para la separación de columnas*/
     .curriculum .fila .item h4{
         font-size: 20px;
         margin-bottom: 10px;
@@ -279,8 +281,6 @@ html{
        line-height: 24px; 
     }
     
-    /*Sección contacto*/
-
     .contacto .contenido-seccion{
         max-width: 1100;
         margin: auto;
@@ -339,4 +339,9 @@ html{
     .contacto .col .info ul li i{
         color:  rgb(55, 58, 57);
         display:inline-table;
-        margin-right:1px ;}
+        margin-right:1px;
+    }
+
+    .contacto {
+        background-color: #FAFAFA;
+    }
