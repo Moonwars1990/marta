@@ -265,3 +265,14 @@ html {
         width: 100%; /* Full width for mobile */
     }
 }
+
+
+.navbar-logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px; /* adjust this value according to your logo's dimensions */
+    width: 200px; /* adjust this value according to your logo's dimensions */
+    padding-left: 10px; /* add some space between the logo and the left edge of the navbar */
+}
