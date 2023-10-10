@@ -1,245 +1,267 @@
 @import url('https://fonts.googleapis.com/css2?family=Trabajo+Sans:wght@300&display=swap');
-*{
-    box-sizing: border-box;
+
+* {
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 100;
 }
-html{
+
+html {
     scroll-behavior: smooth;
-    }
-    
-    .contenedor-header{
-        background:  white;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        left: 0;
-        z-index: 99 ;
-        
-        
-    }
-    .contenedor-header header{
-        max-width: 1100px;
-        margin: auto;
-        display:flex;
-        justify-content: space-between;
-        padding: 15px 20px;
-        
-    }
-    .contenedor-header header .logo a{
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 36px;
-        color: rgb(145, 17, 145);
-        text-decoration: none;
-        right: 90%;
-       
-    }
-    .contenedor-header header ul{
-        display:flex;
-        list-style: none;
-    }
-    .navegador{
-        background-color: white
-       
-    }
-    .nav-link{
-        color: rgb(188, 26, 131);
-    }
-    .nav-item{
-       
-   
-        text-align-last: right;
-        margin: 10px 80px;
-        padding: 9px;
-        transition: .5s;
-        text-decoration: none;
-    }
-    
-    
-    
-    
-    .inicio .contenido-img{
-        padding: 2px;
-        background-color:  rgb(255, 255, 255);
-        max-width: 200px;
-        margin:auto;
-        text-align:center;
-        border-radius: 10%;
-        color: rgb(22, 21, 21);
-        margin-top: 20px ;
-    }
+}
 
-   
-  
-    
-     .inicio .contenido-banner .redes a{
-        
-        color: rgb(56, 126, 231);
-        text-decoration: none;
-        display: inline-block;
-        border: 2px solid #fff;
-        width: 42px;
-        height: 42px;
-        line-height: 42px;
-        margin: 40px 5px;
-        font-size: 20px;
-        transition: .3s;
-        border-radius: 100%
-     }
-     .inicio .contenido-banner .redes a:hover{
-        background-color:rgb(187, 153, 193);
-    }
-    .sobremi{
-       
-        color: rgb(75, 63, 71);
-        padding: 50px 20px;
-        background: #FAFAFA;
-        background-size: cover;
-    }
-    .sobremi .contenido-seccion{
-        max-width: 1100px;
-        margin: auto;
-        color: rgb(181, 29, 161);
-    }
-    .sobremi h2{
-        font-size:48px;
-        font-family: 'Times New Roman', Times, serif,cursive;
-        text-align: center;
-        padding: 20px;
-    
-    }
-    .sobremi .contenido-seccion p{
-        line-height: 22px;
-        margin-bottom: 20px;
-        text-align:center;
-        color:  rgb(108, 104, 107);
-        font-weight: bold;
-       
-    }
-    
-    
-    .tratamientos h2{
-        max-width: 1100px;
-        margin: auto;
-        color: rgb(181, 29, 161);
-        font-family: 'Times New Roman', Times, serif,cursive;
-        font-weight: bold;
-       
-        
-    }
-    .especialidades{
-        max-width: 1100px;
-        margin: auto;
-        color:  rgb(108, 104, 107);
-        font-family: 'Times New Roman', Times, serif,cursive;
-        font-weight: bold;
+.contenedor-header {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
 
-    }
-    .especialidades h3{
-        max-width: 1100px;
-        margin: auto;
-        color:  rgb(123, 68, 102);
-        font-family: 'Times New Roman', Times, serif,cursive;
-        font-weight: bold;
-        
-    }
-    .especialidadesdos h4{
-        max-width: 1100px;
-        margin: auto;
-        color: rgb(188, 121, 183);
-        font-family: 'Times New Roman', Times, serif,cursive;
-        font-weight: bold;
-        
-    }
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
 
-    .tratamientos h2{
-        font-size:48px;
-        font-family: 'Times New Roman', Times, serif,cursive;
-        text-align: center;
-        padding: 20px;
-        color:  rgb(145, 27, 96);
-        max-width: automat;
-    }
-   
-    #fotos{
-        justify-content: center;
-        padding: 90px;
-    }
-  
-        
+}
 
-    .contacto .contenido-seccion{
-        max-width: 1100;
-        margin: auto;
-    }
-    .contacto h2{
-        font-size:50px;
-        font-family: 'Times New Roman', Times, serif,cursive;
-        text-align: center;
-        padding: 60px;
-    }
-    .contacto .fila{
-        display: flex;
-    }
-    .contacto .col{
-        width: 50%;
-        padding: 70px;
-        position: relative;
-    }
- 
-    .contacto button{
-        cursor: pointer;
-        background-color: transparent;
-        border: 2px solid rgb(38, 104, 175);
-        width: fit-content;
-        display: block;
-        margin: 20px auto;
-        padding: 10px 22px;
-        font-size: 16px;
-        color: rgb(81, 68, 95);
-        position: center;
-        z-index: 10;
-    }
-  
-    .contacto button:hover .overlay{
-        width: 100%;
-    
-    }
-    /* Cuadradito de al la lado de la ubicación */
-    .contacto .col .info{
-        position: absolute;
-        top: 10%;
-        background-color:  rgb(236, 201, 228);
-        padding: 10px;
-        width: 200px;
-        left: 42%;
-        
-        border-radius: 10px;
-    }
-    .contacto .col .info ul{
-        list-style:none;
-    }
-    .contacto .col .info ul li{
-        margin-bottom: 10px;
-        border-radius: 10px;
-    }
-   
+.contenedor-header header .logo a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+    color: rgb(145, 17, 145);
+    text-decoration: none;
+    right: 90%;
 
-    .contacto {
-        background-color: #FAFAFA;
+}
+
+.contenedor-header header ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegador {
+    background-color: white
+
+}
+
+.nav-link {
+    color: rgb(188, 26, 131);
+}
+
+.nav-item {
+
+
+    text-align-last: right;
+    margin: 10px 80px;
+    padding: 9px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+
+.inicio .contenido-img {
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+    max-width: 200px;
+    margin: auto;
+    text-align: center;
+    border-radius: 10%;
+    color: rgb(22, 21, 21);
+    margin-top: 20px;
+}
+
+
+.inicio .contenido-banner .redes a {
+
+    color: rgb(56, 126, 231);
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #fff;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 5px;
+    font-size: 20px;
+    transition: .3s;
+    border-radius: 100%
+}
+
+.inicio .contenido-banner .redes a:hover {
+    background-color: rgb(187, 153, 193);
+}
+
+.sobremi {
+
+    color: rgb(75, 63, 71);
+    padding: 50px 20px;
+    background: #FAFAFA;
+    background-size: cover;
+}
+
+.sobremi .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(181, 29, 161);
+}
+
+.sobremi h2 {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.sobremi .contenido-seccion p {
+    line-height: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: rgb(108, 104, 107);
+    font-weight: bold;
+
+}
+
+
+.tratamientos h2 {
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(181, 29, 161);
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-weight: bold;
+}
+
+.especialidades {
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(108, 104, 107);
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-weight: bold;
+
+}
+
+.especialidades h3 {
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(123, 68, 102);
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-weight: bold;
+
+}
+
+.especialidadesdos h4 {
+    max-width: 1100px;
+    margin: auto;
+    color: rgb(188, 121, 183);
+    font-family: 'Times New Roman', Times, serif, cursive;
+    font-weight: bold;
+
+}
+
+.tratamientos h2 {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    text-align: center;
+    padding: 20px;
+    color: rgb(145, 27, 96);
+    max-width: automat;
+}
+
+#fotos {
+    justify-content: center;
+    padding: 90px;
+}
+
+
+.contacto .contenido-seccion {
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif, cursive;
+    text-align: center;
+    padding: 60px;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 70px;
+    position: relative;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgb(38, 104, 175);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: rgb(81, 68, 95);
+    position: center;
+    z-index: 10;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+
+}
+
+/* Cuadradito de al la lado de la ubicación */
+.contacto .col .info {
+    position: absolute;
+    top: 10%;
+    background-color: rgb(236, 201, 228);
+    padding: 10px;
+    width: 200px;
+    left: 42%;
+
+    border-radius: 10px;
+}
+
+.contacto .col .info ul {
+    list-style: none;
+}
+
+.contacto .col .info ul li {
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+.contacto {
+    background-color: #FAFAFA;
+}
+
+.info button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid rgb(45, 212, 54);
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: rgb(46, 175, 46);
+    position: relative;
+    z-index: 10;
+}
+
+
+.custom-carousel-img {
+    object-fit: cover;
+    max-height: 55vh; /* Full height for desktop */
+}
+
+@media (max-width: 768px) {
+    .custom-carousel-img {
+        height: auto; /* Automatic height for mobile */
+        width: 100%; /* Full width for mobile */
     }
-    .info button{
-        cursor: pointer;
-        background-color: transparent;
-        border: 2px solid rgb(45, 212, 54);
-        width: fit-content;
-        display: block;
-        margin: 20px auto;
-        padding: 10px 22px;
-        font-size: 16px;
-        color: rgb(46, 175, 46);
-        position: relative;
-        z-index: 10;
-    }
-    
+}
