@@ -64,10 +64,6 @@ html {
 }
 
 .nav-item {
-
-
-    text-align-last: right;
-    margin: 10px 80px;
     padding: 9px;
     transition: .5s;
     text-decoration: none;
@@ -277,4 +273,27 @@ html {
     .custom-carousel-img {
         height: auto; /* Automatic height for mobile */
         width: 100%; /* Full width for mobile */
-    } } 
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-logo {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 50px; /* adjust this value according to your logo's dimensions */
+        padding-left: 10px; /* add some space between the logo and the left edge of the navbar */
+    }
+}
+
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+    display:inline-block;
+    float: none;
+}
+
